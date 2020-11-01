@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mall?userUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: zhj123
+
+logging:
+  level:
+    root: warn # spring的一些日志？
+    com.codeman.mall4sb: info # 自定义包的日志级别
+  file: log/mall.log # 默认10M切分
+  path: E:\logs\mall
+
+
+server:
+  port: 8082 # 测试环境端口
